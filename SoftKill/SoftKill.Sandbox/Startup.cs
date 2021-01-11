@@ -37,6 +37,8 @@ namespace SoftKill.Sandbox
 
             app.UseRouting();
 
+            app.UseSoftKill();
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

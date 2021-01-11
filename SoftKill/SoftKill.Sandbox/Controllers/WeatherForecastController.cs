@@ -24,6 +24,7 @@ namespace SoftKill.Sandbox.Controllers
         }
 
         [HttpGet]
+        [KillSoftly]
         public IEnumerable<WeatherForecast> Get()
         {
             var rng = new Random();
