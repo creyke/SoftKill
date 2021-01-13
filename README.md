@@ -22,9 +22,9 @@ app.UseSoftKill();
 [HttpGet]
 [Obsolete("This method has a better alternative.")]
 [KillSoftly(
-    DegredationDate = new[] { 2021, 01, 01 },
-    DegredationWindowDays = 7,
-    DegredationSeconds = 2,
-    CondemnationDate = new[] { 2021, 02, 01 })]
+    new[] { 2021, 01, 01 }, // DegredationDate
+    7, // DegredationWindowDays
+    2, // DegredationSeconds
+    new[] { 2021, 02, 01 })] // CondemnationDate
 public IEnumerable<WeatherForecast> Get()
 ```

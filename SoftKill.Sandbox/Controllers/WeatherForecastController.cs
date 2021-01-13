@@ -25,11 +25,7 @@ namespace SoftKill.Sandbox.Controllers
 
         [HttpGet]
         [Obsolete("This method has a better alternative.")]
-        [KillSoftly(
-            DegredationDate = new[] { 2021, 01, 01 },
-            DegredationWindowDays = 7,
-            DegredationSeconds = 2,
-            CondemnationDate = new[] { 2021, 01, 12 })]
+        [KillSoftly(new[] { 2021, 01, 01 }, 7, 2, new[] { 2021, 01, 12 })]
         public IEnumerable<WeatherForecast> Get()
         {
             var rng = new Random();

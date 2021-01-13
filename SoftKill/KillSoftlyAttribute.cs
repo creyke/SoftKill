@@ -1,13 +1,21 @@
 ﻿using System;
 
-namespace SoftKill
+namespace Microsoft.AspNetCore.Mvc
 {
     public class KillSoftlyAttribute : Attribute
     {
-        public int[] DegredationDate { get; set; }
-        public int DegredationSeconds { get; set; }
-        public int DegredationWindowDays { get; set; }
-        public int[] CondemnationDate { get; set; }
+        public int[] DegredationDate { get; }
+        public int DegredationSeconds { get; }
+        public int DegredationWindowDays { get; }
+        public int[] CondemnationDate { get; }
+
+        public KillSoftlyAttribute(int[] degredationDate, int degredationSeconds, int degredationWindowDays, int[] condemnationDate)
+        {
+            DegredationDate = degredationDate;
+            DegredationSeconds = degredationSeconds;
+            DegredationWindowDays = degredationWindowDays;
+            CondemnationDate = condemnationDate;
+        }
 
         public int? GetDelay(DateTime dateTime)
         {
