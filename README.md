@@ -14,6 +14,7 @@ Install the [NuGet package](https://www.nuget.org/packages/SoftKill) into an ASP
 
 ## Enable SoftKill in Startup
 ```csharp
+app.UseRouting();
 app.UseSoftKill();
 ```
 
