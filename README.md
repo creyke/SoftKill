@@ -12,6 +12,12 @@ SoftKill allows you to gently retire API methods by placing an attribute on them
 ## Installing
 Install the [NuGet package](https://www.nuget.org/packages/SoftKill) into an ASP.NET project with a package manager.
 
+### .NET CLI
+```dotnet add package SoftKill```
+
+### Package Manager
+```Install-Package SoftKill```
+
 ## Enable SoftKill in Startup
 ```csharp
 app.UseRouting();
