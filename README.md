@@ -1,7 +1,6 @@
 # SoftKill
 Kill your ASP.NET API methods softly
 
-[![.NET Core](https://github.com/creyke/SoftKill/workflows/.NET%20Core/badge.svg)](https://github.com/creyke/SoftKill/actions?query=workflow%3A%22.NET+Core%22)
 [![NuGet](https://img.shields.io/nuget/v/SoftKill.svg?style=flat)](https://www.nuget.org/packages/SoftKill)
 
 # Overview
